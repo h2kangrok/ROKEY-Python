@@ -15,7 +15,6 @@ class Problem:
         year = 0
         prev_year = None
 
-        # Use the sorted keys of the dictionary to find the maximum decrease
         for current_year in sorted(self.studentsNumDictionary.keys()):
             if prev_year is not None:
                 decrease = self.studentsNumDictionary[prev_year] - \
@@ -28,14 +27,12 @@ class Problem:
         print(f"(1) {year}에 {max_decrease:.1f}명 감소한 것이 최근 가장 급격하게 줄어든 경우입니다.")
 
     def subproblem2(self):
-        # Find the first year when the number of students per class drops below 30
         for year in sorted(self.studentsNumDictionary.keys()):
             if self.studentsNumDictionary[year] < 30:
                 print(f"(2) 학생 수가 30명 미만으로 떨어진 첫 해는 {year}년입니다.")
                 break
 
     def subproblem3(self):
-        # Calculate the average decrease in number of students per class from 2010 to 2021
         years = sorted(self.studentsNumDictionary.keys())
         total_decrease = self.studentsNumDictionary[years[0]
                                                     ] - self.studentsNumDictionary[years[-1]]

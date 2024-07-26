@@ -20,8 +20,6 @@ words = cleaned_text.split()
 alpha_words = [word for word in words if word.isalpha()]
 
 counter_word = Counter(alpha_words)
-
 most_common = counter_word.most_common(1)
-print(most_common)
 
 print(f"가장 많이 나타난 단어: {most_common[0][0]} ({most_common[0][1]}회)")

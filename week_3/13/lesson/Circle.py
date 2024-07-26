@@ -2,10 +2,10 @@ import math
 
 
 class Circle:
-    def __init__(self, x, y, r):
+    def __init__(self, x, y, radius):
         self.x = x
         self.y = y
-        self.r = r
+        self.radius = radius
 
     def calcArea(self):
-        return math.pi * self.r * self.r
+        return math.pi * (self.radius ** 2)

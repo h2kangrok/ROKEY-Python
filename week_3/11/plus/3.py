@@ -11,7 +11,6 @@
 from collections import Counter
 import re
 
-# 주어진 문자열
 text = '''The first they had heard of the strangers from outer space was when the new ultra short-wave frequencies were used. 
 Professor Kennicot of Palmira University was the first to find how to generate and control them. 
 He tried to transform the wavelengths upward to a range either auditory or visual but for some reason power was lost in the process.
@@ -21,15 +20,12 @@ Professor Kennicot was startled one day when he heard, or thought he heard, a so
 
 cleaned_text = re.sub(r"[,.-]", "", text).lower()
 
-# 단어를 나누고 알파벳만으로 이루어진 단어를 필터링
 words = cleaned_text.split()
 alpha_words = [word for word in words if word.isalpha()]
 
 counter_word = Counter(alpha_words)
 
-
 most_common = counter_word.most_common(2)
-print(most_common)
 
 if len(most_common) > 0:
     print(f"가장 많이 나타난 단어: {most_common[0][0]} ({most_common[0][1]}회)")

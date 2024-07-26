@@ -10,7 +10,7 @@ class Vehicle:
 
 class Car(Vehicle):
     def __init__(self, brand, model, horsepower):
-        car = Vehicle("AAA", "BBB")  # 부모 클래스의 생성자 호출
+        super().__init__(brand, model)  # 부모 클래스의 생성자 호출
         self.horsepower = horsepower
         print(
             f"Car initialized: {self.brand} {self.model} with {self.horsepower} HP")

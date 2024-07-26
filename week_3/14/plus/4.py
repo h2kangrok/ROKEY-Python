@@ -4,7 +4,7 @@
 import random
 
 random_list = list(random.sample(range(1, 100), 10))
-
-print(random_list.sort())
+random_list.sort()
+print(random_list)
 random_list.sort(reverse=True)
 print(random_list)

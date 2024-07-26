@@ -28,11 +28,11 @@ class Point:
 
 
 # 예제 사용
-# point = Point()
-Point.getCoordinate()
-print(f"Initial point: ({Point.getX()}, {Point.getY()})")
+point = Point()
+point.getCoordinate()
+print(f"Initial point: ({point.getX()}, {point.getY()})")
 
 # 좌표 변경
-# point.setX(15)
-# point.setY(25)
-# print(f"Updated point: ({point.getX()}, {point.getY()})")
+point.setX(15)
+point.setY(25)
+print(f"Updated point: ({point.getX()}, {point.getY()})")

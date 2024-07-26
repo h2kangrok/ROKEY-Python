@@ -16,7 +16,6 @@ def analyze_courses():
     from collections import Counter
     course_counts = Counter()
 
-    # 각 과목의 출현 횟수를 세기
     for courses in student_courses.values():
         course_counts.update(courses)
 

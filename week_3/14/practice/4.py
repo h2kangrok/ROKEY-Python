@@ -6,6 +6,5 @@ tup_1 = (4, 5, 6)
 combined_list = list_1 + list(tup_1)
 print("방법 1:", combined_list)
 
-
 list_1.extend(tup_1)
 print("방법 2:", list_1)

@@ -1,3 +1,4 @@
+# MARK: 문제 6
 from string import ascii_lowercase
 
 # 주어진 문자열
