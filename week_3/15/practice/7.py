@@ -13,5 +13,4 @@ t.circle(radius, 90)
 t.left(90)
 t.forward(radius)
 
-# 화면이 닫히지 않도록 유지
 t.mainloop()
